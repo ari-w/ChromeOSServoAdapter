@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ChromeOSServoAdapter)(type KiCad)(uri ${KIPRJMOD}/ChromeOSServoAdapter.pretty)(options "")(descr ""))
+)

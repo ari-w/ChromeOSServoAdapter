@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name NLSX5014G)(type Legacy)(uri ${KIPRJMOD}/NLSX5014G.lib)(options "")(descr ""))
+  (lib (name TCA6416A)(type Legacy)(uri ${KIPRJMOD}/TCA6416A.lib)(options "")(descr ""))
+)
