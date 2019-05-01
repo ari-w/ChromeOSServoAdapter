@@ -2436,6 +2436,10 @@ Wire Wire Line
 	6300 6200 7850 6200
 Wire Wire Line
 	7000 5900 7850 5900
+Text Label 13700 5000 0    50   ~ 0
+VUSB1
+Text Label 13650 7500 0    50   ~ 0
+VUSB2
 Wire Bus Line
 	12650 6550 12650 6800
 Wire Bus Line
@@ -2443,57 +2447,7 @@ Wire Bus Line
 Wire Bus Line
 	600  2600 600  5250
 Wire Wire Line
-	3550 1450 3000 1450
+	2650 1450 3550 1450
 Wire Wire Line
-	2650 1450 3000 1450
-Connection ~ 3000 1450
-Wire Wire Line
-	3000 1450 3000 1400
-$Comp
-L Connector:Conn_01x01_Female J9
-U 1 1 5D1470C5
-P 3000 1200
-F 0 "J9" V 2938 1112 50  0000 R CNN
-F 1 "Conn_01x01_Female" V 2847 1112 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3000 1200 50  0001 C CNN
-F 3 "~" H 3000 1200 50  0001 C CNN
-	1    3000 1200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7750 3650 7200 3650
-Wire Wire Line
-	9100 3650 7750 3650
-Connection ~ 7750 3650
-Wire Wire Line
-	7750 3500 7750 3650
-$Comp
-L Connector:Conn_01x01_Female J11
-U 1 1 5D172374
-P 7750 3300
-F 0 "J11" V 7688 3212 50  0000 R CNN
-F 1 "Conn_01x01_Female" V 7597 3212 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 7750 3300 50  0001 C CNN
-F 3 "~" H 7750 3300 50  0001 C CNN
-	1    7750 3300
-	0    -1   -1   0   
-$EndComp
-Connection ~ 6550 3750
-Wire Wire Line
-	6550 3050 6550 3750
-$Comp
-L Connector:Conn_01x01_Female J10
-U 1 1 5D36CC02
-P 6550 2850
-F 0 "J10" V 6488 2762 50  0000 R CNN
-F 1 "Conn_01x01_Female" V 6397 2762 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 6550 2850 50  0001 C CNN
-F 3 "~" H 6550 2850 50  0001 C CNN
-	1    6550 2850
-	0    -1   -1   0   
-$EndComp
-Text Label 13700 5000 0    50   ~ 0
-VUSB1
-Text Label 13650 7500 0    50   ~ 0
-VUSB2
+	7200 3650 9100 3650
 $EndSCHEMATC
