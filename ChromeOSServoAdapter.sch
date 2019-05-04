@@ -550,8 +550,6 @@ Wire Wire Line
 Wire Wire Line
 	10300 5500 10300 5450
 Wire Wire Line
-	10300 5450 10400 5450
-Wire Wire Line
 	11800 5450 11800 5500
 Connection ~ 11800 5500
 $Comp
@@ -617,7 +615,7 @@ U 1 1 5CE3084C
 P 12450 5850
 F 0 "JP3" H 12450 5963 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 12450 6054 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 12450 5850 50  0001 C CNN
+F 2 "ChromeOSServoAdapter:JP3" H 12450 5850 50  0001 C CNN
 F 3 "~" H 12450 5850 50  0001 C CNN
 	1    12450 5850
 	1    0    0    1   
@@ -800,7 +798,7 @@ U 1 1 5CEFD99B
 P 12450 8350
 F 0 "JP4" H 12450 8463 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 12450 8554 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 12450 8350 50  0001 C CNN
+F 2 "ChromeOSServoAdapter:JP3" H 12450 8350 50  0001 C CNN
 F 3 "~" H 12450 8350 50  0001 C CNN
 	1    12450 8350
 	1    0    0    1   
@@ -1010,7 +1008,7 @@ U 1 1 5D01CC82
 P 6100 6000
 F 0 "J3" H 5992 5675 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 5650 5950 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 6100 6000 50  0001 C CNN
+F 2 "ChromeOSServoAdapter:S1x2" H 6100 6000 50  0001 C CNN
 F 3 "~" H 6100 6000 50  0001 C CNN
 	1    6100 6000
 	-1   0    0    1   
@@ -1312,7 +1310,7 @@ U 1 1 5D41FC8B
 P 12550 5050
 F 0 "J5" V 12554 5230 50  0000 L CNN
 F 1 "Conn_02x03_Odd_Even" V 12645 5230 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 12550 5050 50  0001 C CNN
+F 2 "ChromeOSServoAdapter:S2x3" H 12550 5050 50  0001 C CNN
 F 3 "~" H 12550 5050 50  0001 C CNN
 	1    12550 5050
 	0    1    1    0   
@@ -1357,7 +1355,7 @@ U 1 1 5D4D720C
 P 12550 7550
 F 0 "J6" V 12554 7730 50  0000 L CNN
 F 1 "Conn_02x03_Odd_Even" V 12645 7730 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 12550 7550 50  0001 C CNN
+F 2 "ChromeOSServoAdapter:S2x3" H 12550 7550 50  0001 C CNN
 F 3 "~" H 12550 7550 50  0001 C CNN
 	1    12550 7550
 	0    1    1    0   
@@ -1589,7 +1587,7 @@ U 1 1 5D039A8F
 P 4400 9750
 F 0 "JP2" V 4354 9818 50  0000 L CNN
 F 1 "SolderJumper_3_Open" V 4445 9818 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4400 9750 50  0001 C CNN
+F 2 "ChromeOSServoAdapter:JP3" H 4400 9750 50  0001 C CNN
 F 3 "~" H 4400 9750 50  0001 C CNN
 	1    4400 9750
 	0    1    1    0   
@@ -1990,7 +1988,7 @@ U 1 1 5E26068D
 P 3200 3850
 F 0 "D3" V 3239 3733 50  0000 R CNN
 F 1 "LED" V 3148 3733 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" H 3200 3850 50  0001 C CNN
+F 2 "ChromeOSServoAdapter:LED_D3mm" H 3200 3850 50  0001 C CNN
 F 3 "~" H 3200 3850 50  0001 C CNN
 	1    3200 3850
 	0    -1   -1   0   
@@ -2001,7 +1999,7 @@ U 1 1 5E261143
 P 3550 3850
 F 0 "D4" V 3589 3733 50  0000 R CNN
 F 1 "LED" V 3498 3733 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" H 3550 3850 50  0001 C CNN
+F 2 "ChromeOSServoAdapter:LED_D3mm" H 3550 3850 50  0001 C CNN
 F 3 "~" H 3550 3850 50  0001 C CNN
 	1    3550 3850
 	0    -1   -1   0   
@@ -2094,7 +2092,7 @@ U 1 1 5E5538A3
 P 7100 1350
 F 0 "J2" H 7128 1326 50  0000 L CNN
 F 1 "Conn_01x08_Female" H 7128 1235 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 7100 1350 50  0001 C CNN
+F 2 "ChromeOSServoAdapter:S1x8" H 7100 1350 50  0001 C CNN
 F 3 "~" H 7100 1350 50  0001 C CNN
 	1    7100 1350
 	1    0    0    -1  
@@ -2160,7 +2158,7 @@ U 1 1 5E74B1BE
 P 3300 3000
 F 0 "J13" V 3238 2912 50  0000 R CNN
 F 1 "Conn_01x01_Female" H 3800 3100 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3300 3000 50  0001 C CNN
+F 2 "ChromeOSServoAdapter:S1x1" H 3300 3000 50  0001 C CNN
 F 3 "~" H 3300 3000 50  0001 C CNN
 	1    3300 3000
 	1    0    0    -1  
@@ -2173,7 +2171,7 @@ U 1 1 5E783204
 P 1050 2300
 F 0 "J12" V 988 2212 50  0000 R CNN
 F 1 "Conn_01x01_Female" H 1850 2150 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 1050 2300 50  0001 C CNN
+F 2 "ChromeOSServoAdapter:S1x1" H 1050 2300 50  0001 C CNN
 F 3 "~" H 1050 2300 50  0001 C CNN
 	1    1050 2300
 	-1   0    0    1   
@@ -2262,11 +2260,6 @@ Wire Wire Line
 Wire Wire Line
 	10400 5900 11800 5900
 Connection ~ 11800 5900
-Wire Wire Line
-	10400 5600 10400 5450
-Connection ~ 10400 5450
-Wire Wire Line
-	10400 5450 11800 5450
 $Comp
 L Device:C_Small C24
 U 1 1 5EA79948
@@ -2440,14 +2433,47 @@ Text Label 13700 5000 0    50   ~ 0
 VUSB1
 Text Label 13650 7500 0    50   ~ 0
 VUSB2
+Wire Wire Line
+	2650 1450 3550 1450
+Wire Wire Line
+	7200 3650 9100 3650
+Wire Wire Line
+	10300 5450 11800 5450
+Wire Wire Line
+	10400 5600 10400 5550
+Wire Wire Line
+	10400 5550 10150 5550
+Wire Wire Line
+	10150 5550 10150 5400
+Connection ~ 10150 5400
+$Comp
+L Connector:Conn_01x01_Female J9
+U 1 1 5CDA9107
+P 7650 10050
+F 0 "J9" V 7588 9962 50  0000 R CNN
+F 1 "Conn_01x01_Female" V 7497 9962 50  0000 R CNN
+F 2 "ChromeOSServoAdapter:S1x1" H 7650 10050 50  0001 C CNN
+F 3 "~" H 7650 10050 50  0001 C CNN
+	1    7650 10050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5CDAAF29
+P 7650 10450
+F 0 "#PWR05" H 7650 10200 50  0001 C CNN
+F 1 "GND" H 7655 10277 50  0000 C CNN
+F 2 "" H 7650 10450 50  0001 C CNN
+F 3 "" H 7650 10450 50  0001 C CNN
+	1    7650 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 10450 7650 10250
 Wire Bus Line
 	12650 6550 12650 6800
 Wire Bus Line
 	3550 5550 3550 7050
 Wire Bus Line
 	600  2600 600  5250
-Wire Wire Line
-	2650 1450 3550 1450
-Wire Wire Line
-	7200 3650 9100 3650
 $EndSCHEMATC

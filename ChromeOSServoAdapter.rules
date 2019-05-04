@@ -1,0 +1,172 @@
+
+(rules PCB ChromeOSServoAdapter
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 4)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.1)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.9)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clear 160.2)
+    (clear 100.0 (type smd_to_turn_gap))
+    (clear 190.2 (type default_power))
+    (clear 40.0 (type smd_smd))
+    (clear 190.2 (type smd_power))
+    (clear 190.2 (type "kicad_default"_power))
+    (clear 127.2 (type extraNarrow_extraNarrow))
+    (clear 190.2 (type extraNarrow_power))
+    (clear 190.2 (type narrow_power))
+    (clear 190.2 (type power_power))
+  )
+  (padstack "Via[0-1]_800:500_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_450:200_um"
+    (shape
+      (circle F.Cu 450.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 450.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:500_um" "Via[0-1]_800:500_um" default
+  )
+  (via 
+    "Via[0-1]_450:200_um" "Via[0-1]_450:200_um" default
+  )
+  (via 
+    "Via[0-1]_800:500_um-kicad_default" "Via[0-1]_800:500_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_450:200_um-kicad_default" "Via[0-1]_450:200_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:500_um-extraNarrow" "Via[0-1]_800:500_um" extraNarrow
+  )
+  (via 
+    "Via[0-1]_450:200_um-extraNarrow" "Via[0-1]_450:200_um" extraNarrow
+  )
+  (via 
+    "Via[0-1]_800:500_um-narrow" "Via[0-1]_800:500_um" narrow
+  )
+  (via 
+    "Via[0-1]_450:200_um-narrow" "Via[0-1]_450:200_um" narrow
+  )
+  (via 
+    "Via[0-1]_800:500_um-power" "Via[0-1]_800:500_um" power
+  )
+  (via 
+    "Via[0-1]_450:200_um-power" "Via[0-1]_450:200_um" power
+  )
+  (via_rule
+    default "Via[0-1]_450:200_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:500_um-kicad_default"
+  )
+  (via_rule
+    extraNarrow "Via[0-1]_800:500_um-extraNarrow"
+  )
+  (via_rule
+    narrow "Via[0-1]_450:200_um-narrow"
+  )
+  (via_rule
+    power "Via[0-1]_800:500_um-power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND "Net-(C25-Pad1)" "Net-(C10-Pad1)" "Net-(C11-Pad1)" "Net-(C12-Pad1)" "Net-(C13-Pad1)" "Net-(C18-Pad1)" "Net-(C20-Pad1)"
+    "Net-(D1-Pad1)" "Net-(D2-Pad1)" "Net-(D3-Pad2)" "Net-(D3-Pad1)" "Net-(D4-Pad1)" "Net-(D4-Pad2)" "Net-(J1-Pad2)" /SDA
+    "Net-(J1-Pad4)" /SCL "Net-(J1-Pad11)" "/JTAG_WARM_RESET" "/JTAG_TMS" "/JTAG_TRST" "/JTAG_RTCK" "/TJAG_TDO"
+    "Net-(J1-Pad19)" "Net-(J1-Pad21)" "/JTAG_TCK" "Net-(J1-Pad23)" "Net-(J1-Pad24)" "Net-(J1-Pad26)" "Net-(J1-Pad27)" "Net-(J1-Pad28)"
+    /IntExtender /resetExtendet "Net-(J1-Pad35)" "Net-(J1-Pad36)" "/JTAG_TDI" "Net-(J1-Pad38)" "Net-(J1-Pad40)" "/DUT_COLD_RESET_L"
+    "/FW_UP_L" "Net-(J5-Pad4)" "Net-(J5-Pad3)" "Net-(J5-Pad2)" "Net-(J5-Pad1)" "Net-(J6-Pad1)" "Net-(J6-Pad2)" "Net-(J6-Pad3)"
+    "Net-(J6-Pad4)" "Net-(J7-Pad2)" "Net-(J7-Pad4)" "Net-(J7-Pad3)" "Net-(J8-Pad3)" "Net-(J8-Pad4)" "Net-(J8-Pad5)" "Net-(J8-Pad2)"
+    "Net-(JP1-Pad2)" "Net-(JP2-Pad2)" "Net-(JP5-Pad1)" "Net-(U3-Pad6)" "Net-(U3-Pad9)" "Net-(U4-Pad9)" "Net-(U4-Pad6)" "Net-(U5-Pad9)"
+    "Net-(U5-Pad6)" "Net-(U7-Pad4)" "Net-(U7-Pad5)" "Net-(U7-Pad6)" "Net-(U7-Pad8)" "Net-(U7-Pad9)" "Net-(U7-Pad10)" "Net-(U8-Pad5)"
+    "Net-(U8-Pad6)" "Net-(U8-Pad8)" "Net-(U8-Pad9)" "Net-(U9-Pad10)" "Net-(U9-Pad9)" "Net-(U9-Pad8)" "Net-(U9-Pad6)" "Net-(U9-Pad5)"
+    "Net-(U9-Pad4)" "Net-(U10-Pad4)" "Net-(U11-Pad4)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class extraNarrow
+    (clearance_class extraNarrow)
+    (via_rule extraNarrow)
+    (rule
+      (width 127.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class narrow
+    "/PPDUT_SPI1_VREF" "/PPDUT_SPI2_VREF" "/PPDUT_JTAG_VREF" "/PPDUT_UART1_VREF" "/DUT_JTAG_TDI_BUF" "/DUT_RX1" "/DUT_TX1" "/PPDUT_UART2_VREF"
+    "/PP3300_R" "/DUT_SPI2_CLK_BUF" "/DUT_SPI2_CS_BUF" "/DUT_SPI2_DI_BUF" "/DUT_SPI2_DO" "/SPI_HOLD_L" "/DUT_SPI1_CLK_BUF" "/DUT_SPI1_CS_BUF"
+    "/DUT_SPI1_DI_BUF" "/DUT_SPI1_DO" "/UART2_SERVO_DUT_TX" "/UART2_DUT_SERVO_TX" "/SD_DETECT_L" "/DUT_JTAG_TCK_BUF" "/DUT_PWR_BUTTON" "/DUT_JTAG_TMS_BUF"
+    "/DUT_JTAG_TDO" "/DUT_JTAG_RTCK" "/DUT_JTAG_TRST_L" "/DUT_WARM_RESET_L" "/DUT_GOOG_REC_MODE_L" "/UART1_SERVO_DUT_TX" "/UART1_DUT_SERVO_TX" "/I2C_REMOTE_ADC_SDA"
+    "/I2C_REMODE_ADC_SCL" /HPD "/DUT_MFG_MODE" "/DUT_DEV_MODE" "/DUT_LID_OPEN" "/PCH_DISABLE_L" "/KBD_COL1" "/KBD_COL2"
+    "/KBD_ROW1" "/KBD_ROW2" "/KBD_ROW3" "/DUT_RX2" "/DUT_TX2"
+    (clearance_class narrow)
+    (via_rule narrow)
+    (rule
+      (width 160.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class power
+    VCC /1v8 /VUSB2 /VUSB1
+    (clearance_class power)
+    (via_rule power)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
